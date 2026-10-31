@@ -1,81 +1,91 @@
-<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1F6FEB,100:58A6FF&height=200&section=header&text=Sidhant%20Pujara&fontSize=52&fontColor=FFFFFF&fontAlignY=38&desc=AI%20Engineer%20in%20the%20making&descAlignY=58&descSize=18" width="100%" />
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=32&duration=1&pause=99999&color=FFFFFF&center=true&vCenter=true&repeat=false&width=500&height=55&lines=Hi+%F0%9F%91%8B+I'm+Sidhant+Pujara" alt="Hi, I'm Sidhant Pujara" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Data+Science+Intern+%40+GlobalLogic;Building+toward+AI+Engineering;Python+%E2%80%A2+ML+%E2%80%A2+FastAPI+%E2%80%A2+Docker+%E2%80%A2+AWS;Curious+by+default" alt="Typing intro" />
+---
 
-<br/>
+**Data Science Intern @ GlobalLogic (Hitachi) • BCA @ MIT World Peace University '27**
+
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=600&lines=Training+ML+models+at+GlobalLogic;Shipping+APIs+with+FastAPI+%2B+Docker;Deploying+on+AWS;Publishing+research+on+Agentic+AI" alt="What I do" />
+
+</div>
+
+## 🌐 Connect with Me
+
+<div align="center">
 
 <a href="https://sidhantpujara.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/sidhant-pujara/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:sidhantpujara@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<img src="https://komarev.com/ghpvc/?username=sidhantpujara&style=for-the-badge&color=1F6FEB&label=PROFILE+VIEWS" />
+<a href="mailto:sidhantpujara@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 </div>
 
-<!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
-## 🧑‍💻 About Me
-
-```python
-class Sidhant:
-    role       = "Data Science Intern @ GlobalLogic (Hitachi)"
-    education  = "BCA, MIT World Peace University, Pune  (2023 to 2027)"
-    based_in   = "Pune, India 🇮🇳"
-    goal       = "AI Engineer"
-    learning   = ["Deep Learning", "AWS", "LLMs", "Production AI"]
-    research   = "Agentic AI for supply chains"
-
-    def motto(self):
-        return "Ship it, learn from it, ship it better."
-```
-
-<!-- ═══════════════════════════ STACK ═══════════════════════════ -->
-## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,r,java,mysql,postgres,fastapi,docker,aws,git,github,vscode,notion&perline=6" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=plotly&logoColor=white" />
-  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" />
-</p>
-
-<!-- ═══════════════════════════ NOW ═══════════════════════════ -->
-## 🚀 Right Now
-
-| 🔭 Working on | 🌱 Learning | 📄 Writing |
-|:---:|:---:|:---:|
-| ML at GlobalLogic | Deep Learning + AWS | IEEE paper on Agentic AI |
-
-<!-- ═══════════════════════════ STATS ═══════════════════════════ -->
-## 📊 GitHub Stats
+## ⚡ What I'm Doing
 
 <div align="center">
 
-<img src="/github-metrics.svg" alt="Sidhant's GitHub metrics" width="100%" />
+| | |
+|:--|:--|
+| 💼 **GlobalLogic** | Building and evaluating ML models as a Data Science Intern |
+| 📄 **Research** | Writing an IEEE paper on Agentic AI for supply chains |
+| ☁️ **Deploying** | Serving models with FastAPI, Docker and AWS |
+| 🧠 **Deep Learning** | Working through neural networks end to end, no shortcuts |
+| 🎓 **Previously** | Data Science Intern @ Unified Mentor (2024) |
+
+</div>
+
+## 💻 Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,r,java,mysql,postgres,fastapi,docker,aws,linux,git,github,vscode,notion,markdown&perline=7&theme=dark" />
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+<img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+<img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/SCIKIT--LEARN-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+<img src="https://img.shields.io/badge/JUPYTER-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" />
+<img src="https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+
+</div>
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sidhantpujara&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak" />
 
 <br/>
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=sidhantpujara&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB" />
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=sidhantpujara&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=1F6FEB&currStreakLabel=58A6FF" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sidhantpujara&bg_color=0D1117&color=58A6FF&line=1F6FEB&point=FFFFFF&area=true&hide_border=true" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=sidhantpujara&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&rank_icon=github" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sidhantpujara&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" height="165" />
 
 </div>
 
-<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+## 📈 Contribution Graph
+
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1500&color=8B949E&center=true&vCenter=true&width=500&lines=Thanks+for+stopping+by!;Let's+build+something+together+%F0%9F%A4%9D" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sidhantpujara&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&area_color=1F6FEB&hide_border=true&custom_title=Sidhant's%20Contribution%20Graph" width="100%" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:1F6FEB,100:0D1117&height=120&section=footer" width="100%" />
+</div>
+
+## ✍️ Random Dev Quote
+
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=false" />
+
+</div>
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=2000&color=8B949E&center=true&vCenter=true&width=400&lines=Thanks+for+visiting+%E2%9C%A8" />
 
 </div>
