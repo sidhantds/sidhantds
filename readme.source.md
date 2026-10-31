@@ -1,3 +1,4 @@
+```aura width=800 height=300
 <div style={{ position: 'relative', display: 'flex', width: '100%', height: '100%', background: '#07090f', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif', border: '1px solid rgba(255,255,255,0.06)' }}>
   <style>{`
     @keyframes drift-a { 0%, 100% { transform: translate(0,0); opacity: 0.55; } 50% { transform: translate(24px,-18px); opacity: 0.85; } }
@@ -70,7 +71,9 @@
     </div>
   </div>
 </div>
+```
 
+```aura width=800 height=230
 <div style={{ display: 'flex', flexDirection: 'row', gap: 14, width: '100%', height: '100%', fontFamily: 'Inter, sans-serif' }}>
   <style>{`
     @keyframes live { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.3; transform: scale(0.8); } }
@@ -142,7 +145,9 @@
     </div>
   </div>
 </div>
+```
 
+```aura width=800 height=190
 <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#07090f', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif', border: '1px solid rgba(255,255,255,0.06)' }}>
   <style>{`
     @keyframes s-a { 0%, 100% { transform: translate(0,0); opacity: 0.45; } 50% { transform: translate(18px,-12px); opacity: 0.7; } }
@@ -171,7 +176,25 @@
     ))}
   </div>
 </div>
+```
 
+```aura width=800 height=130
+<div style={{ display: 'flex', flexDirection: 'row', gap: 14, width: '100%', height: '100%', fontFamily: 'Inter, sans-serif' }}>
+  {[
+    { label: 'repositories', value: github && github.stats ? github.stats.totalRepos : '—', color: '#58A6FF' },
+    { label: 'commits', value: github && github.stats ? github.stats.totalCommits : '—', color: '#2DD4BF' },
+    { label: 'stars earned', value: github && github.stats ? github.stats.totalStars : '—', color: '#A78BFA' },
+    { label: 'followers', value: github && github.user ? github.user.followers : '—', color: '#F778BA' },
+  ].map((s, i) => (
+    <div key={i} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, height: '100%', background: '#07090f', borderRadius: 16, padding: '0 22px', border: '1px solid rgba(255,255,255,0.06)' }}>
+      <span style={{ fontSize: 34, fontWeight: 700, color: s.color, letterSpacing: -1 }}>{String(s.value)}</span>
+      <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', letterSpacing: 3, textTransform: 'uppercase', marginTop: 6 }}>{s.label}</span>
+    </div>
+  ))}
+</div>
+```
+
+```aura width=130 height=44 link="https://sidhantpujara.vercel.app/" inline align=center
 <SocialMediaButton
   icon="https://cdn.simpleicons.org/vercel/ffffff"
   text="Portfolio"
@@ -187,7 +210,9 @@
     { offset: '100%', color: '#555555' },
   ]}
 />
+```
 
+```aura width=130 height=44 link="https://www.linkedin.com/in/sidhant-pujara/" inline align=center
 <SocialMediaButton
   icon="https://cdn.simpleicons.org/linkedin/0A66C2"
   text="LinkedIn"
@@ -203,7 +228,9 @@
     { offset: '100%', color: '#555555' },
   ]}
 />
+```
 
+```aura width=110 height=44 link="mailto:sidhantpujara@gmail.com" inline align=center
 <SocialMediaButton
   icon="https://cdn.simpleicons.org/gmail/EA4335"
   text="Email"
@@ -219,3 +246,4 @@
     { offset: '100%', color: '#555555' },
   ]}
 />
+```
