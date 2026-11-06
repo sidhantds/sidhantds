@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="32" viewBox="0 0 840 32" role="img" aria-label="Stack">
+<title>Stack</title>
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+  .label { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 11px; letter-spacing: 2.4px; fill: #8A8A93; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+
+<text x="0" y="22" class="label" font-size="14" font-weight="400" fill="#EDEDEF" >02 / STACK</text>
+<line x1="106" x2="840" y1="18" y2="18" stroke="#FFFFFF14"/>
+
+</svg>

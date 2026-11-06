@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="40" viewBox="0 0 108 40" role="img" aria-label="email">
+<title>email</title>
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+  .label { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 11px; letter-spacing: 2.4px; fill: #8A8A93; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+
+<rect x="0.5" y="0.5" width="107" height="39" rx="20" fill="#0A0A0B" stroke="#FFFFFF14"/>
+<text x="20" y="25" class="mono" font-size="13" font-weight="400" fill="#EDEDEF" >email</text>
+<path d="M76 24 L85 15 M79 15 H85 V21" stroke="#EDEDEF" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+</svg>
