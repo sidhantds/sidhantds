@@ -1,6 +1,6 @@
-<p><a href="https://sidhantpujara.vercel.app/"><img src="./.github/assets/header.svg" width="100%" alt="Sidhant Pujara. Data scientist building ML systems that ship. Currently a data science intern at GlobalLogic."></a></p>
+<p><a href="https://sidhantpujara.vercel.app/"><img src="./.github/assets/header.svg" width="100%" alt="Sidhant Pujara. AI engineer building ML systems that ship. Currently a data science intern at GlobalLogic."></a></p>
 
-<p><img src="./.github/assets/now.svg" width="100%" alt="Right now: building ML models at GlobalLogic, writing an IEEE paper on agentic AI, shipping models to production. Education: BCA, MIT World Peace University, class of 2027. Previously: Data Science Intern at Unified Mentor, 2024."></p>
+<p><img src="./.github/assets/now.svg" width="100%" alt="Right now: writing an IEEE paper on agentic AI, building ML models at GlobalLogic, shipping models to production. Education: BCA, MIT World Peace University, class of 2027. Previously: Data Science Intern at Unified Mentor, 2024."></p>
 
 <br>
 
@@ -11,7 +11,7 @@
   <a href="https://github.com/sidhantds/ai-ticket-triage"><img src="./.github/assets/project-ticket-triage.svg" width="49%" alt="AI Ticket Triage: classifies support tickets, predicts priority and SLA, flags low-confidence cases."></a>
 </p>
 <p>
-  <a href="https://github.com/sidhantds/Retail-Sales-Intelligence-Transaction-Anomaly-Detection"><img src="./.github/assets/project-retail-anomaly.svg" width="49%" alt="Retail Anomaly Detection: SQL and Python pipeline for KPIs and explainable transaction flags."></a>
+  <a href="https://github.com/sidhantds/Waste-Classification"><img src="./.github/assets/project-waste-classification.svg" width="49%" alt="Waste Classification: MobileNetV2 transfer learning sorts waste photos into 5 classes at 93% accuracy, live on Streamlit."></a>
   <a href="https://github.com/sidhantds/Airline-Loyalty-Customer-Churn-Prediction"><img src="./.github/assets/project-airline-churn.svg" width="49%" alt="Airline Loyalty Churn: ranks members by churn risk and customer value."></a>
 </p>
 
@@ -19,7 +19,7 @@
 
 <img src="./.github/assets/label-stack.svg" width="100%" alt="Stack">
 
-<img src="./.github/assets/stack.svg" width="100%" alt="Languages: Python, SQL. Modelling: scikit-learn, XGBoost, TensorFlow, PyTorch. Data: Pandas, NumPy, Power BI, Tableau, Streamlit. Shipping: FastAPI, Docker, AWS, GitHub Actions, pytest.">
+<img src="./.github/assets/stack.svg" width="100%" alt="Languages: Python, SQL. Deep learning: PyTorch, TensorFlow, Keras. ML: scikit-learn, XGBoost, Pandas, NumPy. Shipping: FastAPI, Docker, AWS, GitHub Actions, pytest. Apps: Streamlit, SQLite.">
 
 <br><br>
 
