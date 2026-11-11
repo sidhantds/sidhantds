@@ -12,11 +12,11 @@ OUT = Path(__file__).resolve().parent.parent / ".github" / "assets"
 PROFILE = {
     "location": "Pune, India",
     "name": "Sidhant Pujara",
-    "tagline": "Data scientist building ML systems that ship.",
+    "tagline": "AI engineer building ML systems that ship.",
     "whoami": "data science intern @ globallogic",
     "now": [
-        ("Building ML models at GlobalLogic", "Data Science Intern, Hitachi group"),
         ("Writing an IEEE paper on agentic AI", "Autonomous agents for supply chain decisions"),
+        ("Building ML models at GlobalLogic", "Data Science Intern, Hitachi group"),
         ("Shipping models to production", "FastAPI services, Docker images, AWS"),
     ],
     "education": ("BCA, MIT World Peace University", "Class of 2027"),
@@ -27,7 +27,7 @@ PROFILE = {
             "kind": "ML engineering",
             "title": "NEO Sentinel",
             "lines": ["Asteroid hazard screening API trained on NASA's", "Near Earth Object data, served with FastAPI."],
-            "tech": ["python", "xgboost", "fastapi", "docker", "pytest"],
+            "tech": ["scikit-learn", "fastapi", "docker", "pytest", "ci"],
         },
         {
             "slug": "ticket-triage",
@@ -37,11 +37,11 @@ PROFILE = {
             "tech": ["scikit-learn", "tf-idf", "sqlite", "streamlit"],
         },
         {
-            "slug": "retail-anomaly",
-            "kind": "Analytics",
-            "title": "Retail Anomaly Detection",
-            "lines": ["SQL and Python pipeline that reports KPIs and", "flags suspicious transactions with clear rules."],
-            "tech": ["sql", "python", "pandas", "tableau"],
+            "slug": "waste-classification",
+            "kind": "Computer vision",
+            "title": "Waste Classification",
+            "lines": ["MobileNetV2 transfer learning sorts waste photos", "into 5 classes at 93% accuracy, live on Streamlit."],
+            "tech": ["tensorflow", "keras", "jax", "streamlit"],
         },
         {
             "slug": "airline-churn",
@@ -53,9 +53,10 @@ PROFILE = {
     ],
     "stack": [
         ("Languages", ["Python", "SQL"]),
-        ("Modelling", ["scikit-learn", "XGBoost", "TensorFlow", "PyTorch"]),
-        ("Data", ["Pandas", "NumPy", "Power BI", "Tableau", "Streamlit"]),
+        ("Deep learning", ["PyTorch", "TensorFlow", "Keras"]),
+        ("ML", ["scikit-learn", "XGBoost", "Pandas", "NumPy"]),
         ("Shipping", ["FastAPI", "Docker", "AWS", "GitHub Actions", "pytest"]),
+        ("Apps", ["Streamlit", "SQLite"]),
     ],
     "links": [("portfolio", 132), ("linkedin", 124), ("email", 108)],
 }
@@ -229,7 +230,7 @@ def stack():
     rows, y = "", 30
     for name, items in PROFILE["stack"]:
         rows += text(28, y + 20, name.upper(), cls="label")
-        x = 160
+        x = 180
         for item in items:
             w = len(item) * 12.5 * MONO_CHAR + 24
             rows += f'<rect x="{x}" y="{y}" width="{w:.0f}" height="30" rx="7" fill="#FFFFFF08" stroke="{LINE}"/>'
