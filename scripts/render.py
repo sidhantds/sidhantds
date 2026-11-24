@@ -3,7 +3,7 @@
 Edit PROFILE below, then run:  python scripts/render.py
 Every image lands in .github/assets/. No dependencies beyond the standard library.
 """
-import math
+import base64
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -13,6 +13,8 @@ PROFILE = {
     "location": "Pune, India",
     "name": "Sidhant Pujara",
     "tagline": "AI engineer building ML systems that ship.",
+    "headline": "AI & Data Engineer",
+    "subline": "Building ML systems that ship.",
     "whoami": "data science intern @ globallogic",
     "now": [
         ("Writing an IEEE paper on agentic AI", "Autonomous agents for supply chain decisions"),
@@ -108,66 +110,37 @@ def arrow(x, y, size=12, color=MUTED):
     )
 
 
-# ── Header: name on the left, a training curve drawing itself on the right ──
-def loss_curves():
-    x0, x1, top, bottom = 520, 792, 74, 244
-    train, val = [], []
-    for i in range(41):
-        t = i / 40
-        jitter = math.sin(i * 1.7) * 2.2 * (1 - t)
-        train.append((x0 + t * (x1 - x0), top + 152 * (1 - math.exp(-4.2 * t)) + jitter))
-        overfit = 34 * max(0.0, t - 0.68) ** 2 * 6
-        val.append((x0 + t * (x1 - x0), top + 10 + 120 * (1 - math.exp(-3.6 * t)) - overfit + jitter * 0.6))
-    best = max(range(len(val)), key=lambda i: val[i][1])
-    return train, val, best, (x0, x1, top, bottom)
-
-
-def path_of(points):
-    return "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in points)
-
-
+# ── Header: full width photo, slow drift, text rises in over a left shade ──
 def header():
     p = PROFILE
-    train, val, best, (x0, x1, top, bottom) = loss_curves()
-    bx, by = val[best]
-    ticks = "".join(
-        f'<line x1="{x0}" x2="{x1}" y1="{y}" y2="{y}" stroke="{LINE}" stroke-dasharray="2 5"/>'
-        for y in (top, (top + bottom) / 2, bottom)
-    )
-    style = f"""
-  .draw {{ stroke-dasharray: 600; animation: draw 2.6s cubic-bezier(.22,1,.36,1) .4s both; }}
-  .draw2 {{ animation-delay: .7s; }}
-  .fade {{ animation: fade .6s ease 2.6s both; }}
-  .cursor {{ animation: blink 1.1s steps(1) infinite; }}
-  @keyframes draw {{ from {{ stroke-dashoffset: 600; }} to {{ stroke-dashoffset: 0; }} }}
-  @keyframes fade {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
-  @keyframes blink {{ 50% {{ fill-opacity: 0; }} }}
+    photo = base64.b64encode((OUT / "header-photo.jpg").read_bytes()).decode()
+    style = """
+  .photo { transform-box: fill-box; transform-origin: 50% 50%; animation: drift 16s ease-in-out infinite alternate; }
+  .rise { animation: rise 1.1s cubic-bezier(.22,1,.36,1) .2s both; }
+  .rise2 { animation-delay: .45s; }
+  .rise3 { animation-delay: .7s; }
+  @keyframes drift { from { transform: scale(1.02); } to { transform: scale(1.1); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 """
     body = f"""
 <defs>
-  <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#FFFFFF"/></pattern>
-  <radialGradient id="fadeout" cx="78%" cy="40%" r="70%"><stop offset="0" stop-color="#fff" stop-opacity=".09"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-  <mask id="m"><rect width="{W}" height="320" fill="url(#fadeout)"/></mask>
+  <linearGradient id="shade" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="{BG}" stop-opacity=".94"/>
+    <stop offset=".5" stop-color="{BG}" stop-opacity=".6"/>
+    <stop offset="1" stop-color="{BG}" stop-opacity=".08"/>
+  </linearGradient>
+  <clipPath id="frame"><rect width="{W}" height="320" rx="14"/></clipPath>
 </defs>
-{card(W, 320)}
-<rect x="1" y="1" width="{W - 2}" height="318" rx="14" fill="url(#dots)" mask="url(#m)"/>
-{text(48, 84, p['location'].upper(), cls='label', size=11)}
-{text(46, 150, p['name'], size=54, weight=600, extra='letter-spacing="-1.6"')}
-{text(48, 190, p['tagline'], size=18, fill=MUTED)}
-<text x="48" y="250" class="mono" font-size="14" fill="{MUTED}"><tspan fill="{LIVE}">$</tspan> whoami <tspan fill="{DIM}">→</tspan> <tspan fill="{INK}">{escape(p['whoami'])}</tspan><tspan class="cursor" fill="{INK}" dx="4">▍</tspan></text>
-{ticks}
-<path class="draw" d="{path_of(val)}" stroke="{MUTED}" stroke-width="1.5" fill="none"/>
-<path class="draw draw2" d="{path_of(train)}" stroke="{INK}" stroke-width="2" fill="none"/>
-<g class="fade">
-  <line x1="{bx:.1f}" x2="{bx:.1f}" y1="{top}" y2="{bottom}" stroke="{LIVE}" stroke-opacity=".35" stroke-dasharray="3 4"/>
-  <circle cx="{bx:.1f}" cy="{by:.1f}" r="4" fill="{BG}" stroke="{LIVE}" stroke-width="2"/>
-  {text(bx - 8, top - 10, 'best epoch', cls='mono', size=10, fill=LIVE, extra='text-anchor="end"')}
+<g clip-path="url(#frame)">
+  <image class="photo" href="data:image/jpeg;base64,{photo}" x="-12" y="-12" width="{W + 24}" height="344" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="{W}" height="320" fill="url(#shade)"/>
 </g>
-{text(x0, bottom + 24, 'train', cls='mono', size=10, fill=INK)}
-{text(x0 + 46, bottom + 24, 'val', cls='mono', size=10, fill=MUTED)}
-{text(x1, bottom + 24, 'epochs →', cls='mono', size=10, fill=DIM, extra='text-anchor="end"')}
+<rect x="0.5" y="0.5" width="{W - 1}" height="319" rx="14" fill="none" stroke="{LINE}"/>
+<text x="48" y="92" class="label rise" font-size="11">{escape(p['location'].upper())}</text>
+{text(46, 168, p['headline'], size=50, weight=600, cls='sans rise rise2', extra='letter-spacing="-1.4"')}
+{text(48, 206, p['subline'], size=18, fill=INK, cls='sans rise rise3')}
 """
-    return svg(W, 320, body, style, f"{p['name']}. {p['tagline']}")
+    return svg(W, 320, body, style, f"{p['name']}. {p['headline']}. {p['tagline']}")
 
 
 # ── Now / education / previously ──────────────────────────────
